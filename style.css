@@ -1,0 +1,60 @@
+body {
+  color: #532727;
+  font-family: monospace;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+  align-items: center;
+}
+header p {
+  font-size: 2rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+main {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+main h1 {
+  font-size: 1.5rem;
+  padding-top: 100px;
+}
+main .tema {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+main .areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+main .areas div {
+  padding: 10px;
+  border: 2px solid #532727;
+  background: #f1f1f1;
+  min-width: 200px;
+  max-width: 260px;
+  display: grid;
+  justify-items: center;
+}
+main .areas ul p {
+  font-size: 1rem;
+  text-align: start;
+}
+main .areas ul li{
+  list-style: none;
+}
