@@ -1,0 +1,104 @@
+body {
+  color: #532727;
+  font-family: monospace;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+}
+header p {
+  font-size: 2rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+main {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+main h1 {
+  font-size: 1.5rem;
+  padding-top: 100px;
+}
+main .tema {
+  display: grid;
+  justify-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+main .areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+  justify-content: center;
+  position: relative;
+}
+main .areas div {
+  padding: 10px;
+  background: #f1f1f1;
+  min-width: 200px;
+  max-width: 260px;
+  display: grid;
+  display:inline-block;
+  justify-items: center;
+}
+main .areas ul p {
+  font-size: 1rem;
+  text-align: start;
+}
+main .areas ul li{
+  list-style: none;
+}
+.areas div h2 {
+  padding: 20px;
+}
+.areas div img {
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+.areas div::before {
+  content: "";
+  background-color: black;
+  width: 2px;
+  height: 40px;
+  position: absolute;
+  top: -40px;
+}
+.areas div:nth-child(1)::before{
+ background-color: #E5DC03;
+}
+.areas div:nth-child(1){
+  border: 2px solid #E5DC03; 
+  background: #ffffb1;
+}
+.areas div:nth-child(2)::before{
+  background-color: #298100;
+ }
+ .areas div:nth-child(2){
+   border: 2px solid #298100; 
+   background: #e1ffd1;
+ }
+ .areas div:nth-child(3)::before{
+  background-color: #110967;
+ }
+ .areas div:nth-child(3){
+   border: 2px solid #110967; 
+   background: #d8d4ff;
+ }
+ .areas div:nth-child(4)::before{
+  background-color: #9D0000;
+ }
+ .areas div:nth-child(4){
+   border: 2px solid #9D0000; 
+   background: #ffbbbb;
+ }
