@@ -102,3 +102,11 @@ main .areas ul li{
    border: 2px solid #9D0000; 
    background: #ffbbbb;
  }
+ header li a {
+  padding: 10px;
+  cursor: pointer;
+  color: #490000;
+ }
+ header li a:hover {
+  border-bottom: 2px solid #9D0000;
+}
