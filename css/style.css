@@ -3,6 +3,8 @@ body {
   font-family: monospace;
   max-width: 2440px;
   margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
 }
 header {
   display: flex;
@@ -24,6 +26,7 @@ main {
   display: grid;
   justify-content: center;
   text-align: center;
+  padding-bottom: 100px;
 }
 main h1 {
   font-size: 1.5rem;
@@ -39,10 +42,14 @@ main .tema {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  margin-top: 40px;
+  padding: 20px;
   background: #d8d8d8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
 }
+
 main .areas {
   display: flex;
   flex-wrap: wrap;
@@ -57,14 +64,14 @@ main .areas div {
   min-width: 200px;
   max-width: 260px;
   display: grid;
-  display:inline-block;
+  display: inline-block;
   justify-items: center;
 }
 main .areas ul p {
   font-size: 1rem;
   text-align: start;
 }
-main .areas ul li{
+main .areas ul li {
   list-style: none;
 }
 .areas div h2 {
@@ -82,56 +89,56 @@ main .areas ul li{
   position: absolute;
   top: -40px;
 }
-.areas div:nth-child(1)::before{
- background-color: #E5DC03;
+.areas div:nth-child(1)::before {
+  background-color: #e5dc03;
 }
-.areas div:nth-child(1){
-  border: 2px solid #E5DC03; 
+.areas div:nth-child(1) {
+  border: 2px solid #e5dc03;
   background: #ffffb1;
 }
-.areas div:nth-child(2)::before{
+.areas div:nth-child(2)::before {
   background-color: #298100;
- }
- .areas div:nth-child(2){
-   border: 2px solid #298100; 
-   background: #e1ffd1;
- }
- .areas div:nth-child(3)::before{
+}
+.areas div:nth-child(2) {
+  border: 2px solid #298100;
+  background: #e1ffd1;
+}
+.areas div:nth-child(3)::before {
   background-color: #110967;
- }
- .areas div:nth-child(3){
-   border: 2px solid #110967; 
-   background: #d8d4ff;
- }
- .areas div:nth-child(4)::before{
-  background-color: #9D0000;
- }
- .areas div:nth-child(4){
-   border: 2px solid #9D0000; 
-   background: #ffbbbb;
- }
- header li a {
+}
+.areas div:nth-child(3) {
+  border: 2px solid #110967;
+  background: #d8d4ff;
+}
+.areas div:nth-child(4)::before {
+  background-color: #9d0000;
+}
+.areas div:nth-child(4) {
+  border: 2px solid #9d0000;
+  background: #ffbbbb;
+}
+header li a {
   padding: 10px;
   cursor: pointer;
   color: #490000;
- }
- header li a:hover {
-  border-bottom: 2px solid #9D0000;
+}
+header li a:hover {
+  border-bottom: 2px solid #9d0000;
 }
 
 .areas div::after {
   content: "";
   position: absolute;
 }
-.areas div:nth-child(1)::after{
+.areas div:nth-child(1)::after {
   width: 200px;
   height: 100px;
   position: absolute;
   top: -140px;
-  border-top: 2px solid #E5DC03;
-  border-left: 2px solid #E5DC03;
+  border-top: 2px solid #e5dc03;
+  border-left: 2px solid #e5dc03;
 }
-.areas div:nth-child(2)::after{
+.areas div:nth-child(2)::after {
   width: 100px;
   height: 70px;
   position: absolute;
@@ -139,7 +146,7 @@ main .areas ul li{
   border-bottom: 2px solid #298100;
   border-right: 2px solid #298100;
 }
-.areas div:nth-child(3)::after{
+.areas div:nth-child(3)::after {
   width: 100px;
   height: 70px;
   position: absolute;
@@ -148,16 +155,16 @@ main .areas ul li{
   border-bottom: 2px solid #110967;
   border-left: 2px solid #110967;
 }
-.areas div:nth-child(4)::after{
+.areas div:nth-child(4)::after {
   width: 200px;
   height: 100px;
   position: absolute;
   top: -140px;
   right: 128px;
-  border-top: 2px solid #9D0000;
-  border-right: 2px solid #9D0000;
+  border-top: 2px solid #9d0000;
+  border-right: 2px solid #9d0000;
 }
- 
+
 .tema-areas {
   position: relative;
 }
@@ -179,44 +186,46 @@ main .areas ul li{
 }
 @media (max-width: 1105px) {
   .areas div::before {
-  content: "";
-  background-color: black;
-  width: 2px;
-  height: 40px;
-  position: absolute;
-  top: -40px;
+    content: "";
+    background-color: black;
+    width: 2px;
+    height: 40px;
+    position: absolute;
+    top: -40px;
+  }
+
+  .areas div::after {
+    content: none;
+    position: absolute;
+  }
 }
 
-.areas div::after {
-  content: none;
-  position: absolute;
-}
-}
-
-@media (max-width: 1105px){
-  .areas div:nth-child(4)::before{
+@media (max-width: 1105px) {
+  .areas div:nth-child(4)::before {
     content: none;
   }
-  .areas div:nth-child(2)::before, .areas div:nth-child(3)::before, .areas div:nth-child(1)::before{
+  .areas div:nth-child(2)::before,
+  .areas div:nth-child(3)::before,
+  .areas div:nth-child(1)::before {
     height: 80px;
     top: -80px;
   }
-  
 }
-@media (max-width: 836px){
-  .areas div:nth-child(4)::before, .areas div:nth-child(3)::before{
+@media (max-width: 836px) {
+  .areas div:nth-child(4)::before,
+  .areas div:nth-child(3)::before {
     content: none;
   }
-  .areas div:nth-child(2)::before, .areas div:nth-child(1)::before{
+  .areas div:nth-child(2)::before,
+  .areas div:nth-child(1)::before {
     height: 80px;
     top: -80px;
   }
-  
 }
-@media (max-width: 566px){
-  .areas div:nth-child(4)::before, .areas div:nth-child(3)::before, .areas div:nth-child(2)::before{
+@media (max-width: 566px) {
+  .areas div:nth-child(4)::before,
+  .areas div:nth-child(3)::before,
+  .areas div:nth-child(2)::before {
     content: none;
   }
-  
 }
-
