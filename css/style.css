@@ -5,6 +5,7 @@ body {
   margin: 0 auto;
   position: relative;
   min-height: 100vh;
+  background-color: #d9e7ff;
 }
 header {
   color: #d8d4ff;
@@ -97,21 +98,21 @@ main .areas ul li {
 }
 .areas div:nth-child(1) {
   border: 2px solid #e5dc03;
-  background: #ffffb1;
+  background: #ffff89;
 }
 .areas div:nth-child(2)::before {
   background-color: #298100;
 }
 .areas div:nth-child(2) {
   border: 2px solid #298100;
-  background: #e1ffd1;
+  background: #4eff4b95;
 }
 .areas div:nth-child(3)::before {
   background-color: #110967;
 }
 .areas div:nth-child(3) {
   border: 2px solid #110967;
-  background: #d8d4ff;
+  background: #59a2fb;
 }
 .areas div:nth-child(4)::before {
   background-color: #9d0000;
