@@ -231,6 +231,10 @@ header li a:hover {
   .areas div:nth-child(2)::before {
     content: none;
   }
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
 }
 
 .custom-shape-divider-top-1684632052 {
