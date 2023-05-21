@@ -1,0 +1,23 @@
+main {
+  max-width: 90ch;
+  margin: 0 auto;
+  text-align: start;
+}
+main h1 {
+  text-align: center;
+}
+main ul li {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style: square;
+}
+section {
+  text-align: center;
+  margin: 60px auto;
+}
+section h2 {
+  margin: 20px;
+}
+section iframe {
+  max-width: 560px;
+}

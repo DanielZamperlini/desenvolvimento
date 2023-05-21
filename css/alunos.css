@@ -1,0 +1,8 @@
+.alunos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 100px;
+}
