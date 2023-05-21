@@ -15,12 +15,12 @@ main ul li {
 }
 section {
   text-align: center;
-  margin: 30px;
   padding-bottom: 100px;
 }
 section h2 {
-  margin: 20px;
+  margin: 30px;
 }
 section iframe {
   max-width: 560px;
+  padding-bottom: 30px;
 }
