@@ -7,11 +7,12 @@ body {
   min-height: 100vh;
 }
 header {
+  color: #d8d4ff;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
   align-items: center;
-  background: #d8d8d8;
+  background: #4133d7;
 }
 header p {
   font-size: 2rem;
@@ -22,6 +23,7 @@ header ul {
   gap: 20px;
   font-size: 1.2rem;
 }
+
 main {
   display: grid;
   justify-content: center;
@@ -42,12 +44,13 @@ main .tema {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: #d8d8d8;
+  padding: 15px;
+  background: #4133d7;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3rem; 
+  height: 3rem;
+  color: #d8d4ff;
 }
 
 main .areas {
@@ -120,10 +123,10 @@ main .areas ul li {
 header li a {
   padding: 10px;
   cursor: pointer;
-  color: #490000;
+  color: #d8d4ff;
 }
 header li a:hover {
-  border-bottom: 2px solid #9d0000;
+  border-bottom: 2px solid #d8d4ff;
 }
 
 .areas div::after {
@@ -228,4 +231,25 @@ header li a:hover {
   .areas div:nth-child(2)::before {
     content: none;
   }
+}
+
+.custom-shape-divider-top-1684632052 {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1684632052 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1684632052 .shape-fill {
+  fill: #4133d7;
 }
