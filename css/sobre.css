@@ -15,12 +15,35 @@ main ul li {
 }
 section {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 section h2 {
   margin: 30px;
 }
 section iframe {
   max-width: 560px;
+  padding-bottom: 30px;
+}
+.dev-system{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.dev-system p{
+  max-width: 100ch;
+  padding: 0 40px;
+  text-align: start;
+  text-indent: 20px;
+}
+.dev-system h2{
+  font-size: 1.2rem;
+}
+.dev-system ul li {
+  text-align: initial;
+  padding-bottom: 10px;
+  list-style: square;
+}
+.dev-system ul {
   padding-bottom: 30px;
 }
