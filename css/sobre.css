@@ -32,7 +32,7 @@ section iframe {
 }
 .dev-system p{
   max-width: 100ch;
-  padding: 0 40px;
+  padding: 5px 30px;
   text-align: start;
   text-indent: 20px;
 }
@@ -45,5 +45,5 @@ section iframe {
   list-style: square;
 }
 .dev-system ul {
-  padding-bottom: 30px;
+  margin: 30px;
 }
